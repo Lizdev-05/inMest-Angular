@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21999d;
+  padding: 10px 8rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.nav li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.bell {
+  border: 1px #fff solid;
+  border-radius: 50%;
+  padding: 10px 1rem;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 100%;
+  /* padding: 1rem 8rem; */
+}
+
+.next {
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  padding: 2rem 8rem;
+}
+.wrapper .side-nav {
+  min-width: 300px;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+.wrapper .side-nav .menu {
+  list-style: none;
+}
+
+.wrapper .side-nav .menu .menu-active {
+  background-color: #00c8c8;
+  color: white;
+}
+.wrapper .side-nav .menu li {
+  padding: 10px;
+  color: #00cbcb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 25px;
+}
+
+.wrapper .side-nav .menu .sidemenu-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.wrapper .side-nav span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.main-content-wrapper {
+  //   width: 350px;
+  //   height: 350px;
+  padding: 2rem;
+  //   border: 1px solid grey;
+  //   background-color: #00c8c8;
+  //   border-top-left-radius: 100px;
+  //   border-bottom-right-radius: 100px;
+}
