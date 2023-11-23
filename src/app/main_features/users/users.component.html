@@ -1,1 +1,32 @@
-<p>users works!</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Cohort</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <th scope="row">{{ user.id }}</th>
+      <td>{{ user.first_name }}</td>
+      <td>{{ user.last_name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.cohort }}</td>
+      <td>
+        <button
+          (click)="viewUser(user)"
+          [routerLink]="['/user-detail']"
+          [queryParams]="{ id: user.id, name: user.first_name }"
+        >
+          viewUser
+        </button>
+        <button (click)="deleteUser(user)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

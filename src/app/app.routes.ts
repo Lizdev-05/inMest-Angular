@@ -6,6 +6,7 @@ import { AttendanceComponent } from './main_features/attendance/attendance.compo
 import { LeaveComponent } from './main_features/leave/leave.component';
 import { RequestComponent } from './main_features/request/request.component';
 import { AnalyticsComponent } from './main_features/analytics/analytics.component';
+import { UserDetailComponent } from './main_features/user-detail/user-detail.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,9 @@ export const routes: Routes = [
   {
     path: 'analytics',
     component: AnalyticsComponent,
+  },
+  {
+    path: 'user-detail',
+    component: UserDetailComponent,
   },
 ];
