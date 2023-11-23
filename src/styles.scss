@@ -65,6 +65,9 @@ body {
   background-color: #00c8c8;
   color: white;
 }
+
+svg {
+}
 .wrapper .side-nav .menu li {
   padding: 10px;
   color: #00cbcb;
@@ -84,6 +87,10 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 20px 0;
+}
+
+.active {
+  background: "white";
 }
 
 .main-content-wrapper {
