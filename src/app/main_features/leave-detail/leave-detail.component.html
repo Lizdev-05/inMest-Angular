@@ -1,0 +1,17 @@
+<!-- Display the detail of leave applicaction from the leave component-->
+
+<div>
+  <ul>
+    <li>Id: {{ leaveId }}</li>
+    <li>Leave Type: {{ createdBy }}</li>
+    <li>Start Day: {{ startDay }}</li>
+    <li>End Date: {{ endDate }}</li>
+    <li>Status: {{ leaveStatus }}</li>
+    <li>Last Modified: {{ lastModified }}</li>
+    <li>Approve By: {{ approveBy }}</li>
+  </ul>
+  >
+
+  <!-- retuern button -->
+  <button class="btn btn-primary" (click)="goBack()">Back</button>
+</div>

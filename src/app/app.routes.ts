@@ -7,6 +7,7 @@ import { LeaveComponent } from './main_features/leave/leave.component';
 import { RequestComponent } from './main_features/request/request.component';
 import { AnalyticsComponent } from './main_features/analytics/analytics.component';
 import { UserDetailComponent } from './main_features/user-detail/user-detail.component';
+import { LeaveDetailComponent } from './main_features/leave-detail/leave-detail.component';
 
 export const routes: Routes = [
   {
@@ -26,8 +27,12 @@ export const routes: Routes = [
     component: AttendanceComponent,
   },
   {
-    path: 'leave',
+    path: 'leaves',
     component: LeaveComponent,
+  },
+  {
+    path: 'leaves/:id/:name',
+    component: LeaveDetailComponent,
   },
   {
     path: 'request',

@@ -44,12 +44,11 @@ export class UsersComponent implements OnInit {
     },
   ];
 
-  // other properties...
   viewUser: any;
+
   deleteUser(user: any): void {
     this.users = this.users.filter((u) => u.id !== user.id);
   }
 
-  editUser(user: any): void {}
   ngOnInit(): void {}
 }

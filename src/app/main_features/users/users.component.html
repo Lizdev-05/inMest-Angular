@@ -21,7 +21,11 @@
         <button
           (click)="viewUser(user)"
           [routerLink]="['/user-detail']"
-          [queryParams]="{ id: user.id, name: user.first_name }"
+          [queryParams]="{
+            id: user.id,
+            name: user.first_name,
+           
+          }"
         >
           viewUser
         </button>

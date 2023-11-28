@@ -1,1 +1,39 @@
-<p>leave works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Leave Type</th>
+      <th scope="col">Start Day</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Status</th>
+      <th scope="col">Last Modified</th>
+      <th scope="col">Approve By</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let leave of leaves">
+      <th scope="row">{{ leave.id }}</th>
+      <td>{{ leave?.leave_type }}</td>
+      <td>{{ leave?.start_day }}</td>
+      <td>{{ leave?.end_date }}</td>
+      <td>{{ leave?.status }}</td>
+      <td>{{ leave?.last_modified }}</td>
+      <td>{{ leave?.approve_by }}</td>
+      <td>
+        <button
+          class="btn btn-success"
+          (click)="viewLeave(leave)"
+          [routerLink]="['/leaves', leave.id, leave.leave_type]"
+          [queryParams]="{
+            id: leave.id,
+            leave_type: leave.leave_type,
+          }"
+        >
+          view leave
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
